@@ -1,3 +1,6 @@
 soong_namespace {
-    imports: ["hardware/qcom/bootctrl"],
+    imports: ["hardware/qcom/bootctrl",
+        "hardware/lineage/interfaces/power-libperfmgr",
+        "hardware/qcom-caf/common/libqti-perfd-client"
+        ],
 }

@@ -327,8 +327,8 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
-    android.hardware.power@1.2.vendor \
+    android.hardware.power-service.lineage-libperfmgr \
+    libqti-perfd-client \
     vendor.qti.hardware.perf@2.0.vendor
 
 # QCOM
@@ -388,6 +388,10 @@ PRODUCT_PACKAGES += \
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/lineage/interfaces/power-libperfmgr \
+    hardware/qcom-caf/common/libqti-perfd-client \
     $(LOCAL_PATH)
 QCOM_SOONG_NAMESPACE := $(LOCAL_PATH)/qcom-caf
 
